@@ -1,0 +1,15 @@
+{
+  "status": true,
+  "page": 2,
+  "loadMore": false,
+  "data_result": [
+    "assets/plugins/design-tailor/dummy_data/graphics/shapes/21.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/shapes/22.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/shapes/23.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/shapes/24.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/shapes/25.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/shapes/26.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/shapes/27.svg"
+  ],
+  "message": "Shapes Loaded"
+}

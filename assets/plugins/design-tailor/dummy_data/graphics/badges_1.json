@@ -1,0 +1,28 @@
+{
+  "status": true,
+  "page": 1,
+  "loadMore": true,
+  "data_result": [
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/1.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/2.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/3.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/4.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/5.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/6.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/7.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/8.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/9.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/10.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/11.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/12.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/13.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/14.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/15.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/16.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/17.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/18.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/19.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/badges/20.svg"
+  ],
+  "message": "Badges Loaded."
+}

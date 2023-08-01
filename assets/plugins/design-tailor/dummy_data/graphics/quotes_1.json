@@ -1,0 +1,28 @@
+{
+  "status": true,
+  "page": 1,
+  "loadMore": true,
+  "data_result": [
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/1.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/2.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/3.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/4.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/5.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/6.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/7.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/8.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/9.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/10.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/11.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/12.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/13.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/14.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/15.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/16.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/17.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/18.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/19.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/quotes/20.svg"
+  ],
+  "message": "Quotes Loaded"
+}

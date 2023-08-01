@@ -1,0 +1,28 @@
+{
+  "status": true,
+  "page": 1,
+  "loadMore": true,
+  "data_result": [
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/1.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/2.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/3.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/4.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/5.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/6.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/7.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/8.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/9.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/10.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/11.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/12.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/13.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/14.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/15.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/16.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/17.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/18.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/19.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flags/20.svg"
+  ],
+  "message": "Icons Loaded"
+}

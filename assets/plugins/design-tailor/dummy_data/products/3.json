@@ -1,0 +1,6 @@
+{
+  "status": true,
+  "images": ["assets/plugins/design-tailor/dummy_data/products/t_shirts/1.png", "assets/plugins/design-tailor/dummy_data/products/t_shirts/1-1.png", "assets/plugins/design-tailor/dummy_data/products/t_shirts/1-2.png", "assets/plugins/design-tailor/dummy_data/products/t_shirts/1-3.png"],
+  "message": "Images Loaded Successfully"
+}
+

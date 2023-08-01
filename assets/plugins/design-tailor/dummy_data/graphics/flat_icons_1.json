@@ -1,0 +1,28 @@
+{
+  "status": true,
+  "page": 1,
+  "loadMore": true,
+  "data_result": [
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/1.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/2.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/3.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/4.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/5.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/6.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/7.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/8.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/9.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/10.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/11.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/12.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/13.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/14.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/15.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/16.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/17.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/18.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/19.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/flat_icons/20.svg"
+  ],
+  "message": "Icons Loaded"
+}

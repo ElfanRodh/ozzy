@@ -1,0 +1,20 @@
+{
+  "status": true,
+  "loadMore": false,
+  "page": 1,
+  "data_result": [
+    "assets/plugins/design-tailor/dummy_data/graphics/zodiac/1.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/zodiac/2.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/zodiac/3.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/zodiac/4.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/zodiac/5.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/zodiac/6.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/zodiac/7.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/zodiac/8.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/zodiac/9.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/zodiac/10.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/zodiac/11.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/zodiac/12.svg"
+  ],
+  "message": "Shapes Loaded"
+}

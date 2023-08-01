@@ -1,0 +1,28 @@
+{
+  "status": true,
+  "page": 1,
+  "loadMore": true,
+  "data_result": [
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/1.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/2.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/3.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/4.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/5.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/6.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/7.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/8.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/9.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/10.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/11.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/12.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/13.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/14.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/15.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/16.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/17.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/18.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/19.svg",
+    "assets/plugins/design-tailor/dummy_data/graphics/cliparts/20.svg"
+  ],
+  "message": "ClipArts Loaded."
+}
