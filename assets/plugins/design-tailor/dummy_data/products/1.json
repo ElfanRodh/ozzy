@@ -1,6 +1,6 @@
 {
   "status": true,
-  "images": ["assets/plugins/design-tailor/dummy_data/products/t_shirts/20.png", "assets/plugins/design-tailor/dummy_data/products/t_shirts/20-1.png", "assets/plugins/design-tailor/dummy_data/products/t_shirts/20-2.png"],
+  "images": ["assets/create-design/mockup/polos/Abu Misty Gelap/01.jpg", "assets/create-design/mockup/polos/Abu Misty Gelap/02.jpg", "assets/create-design/mockup/polos/Abu Misty Gelap/03.jpg", "assets/create-design/mockup/polos/Abu Misty Gelap/04.jpg"],
   "message": "Images Loaded Successfully"
 }
 

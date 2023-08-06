@@ -170,8 +170,8 @@ body {
   display: block;
   float: none;
   margin: auto;
-  max-width: 550px;
-  border: 1px dashed #d91e18;
+  max-width: 400px;
+  /* border: 1px dashed #d91e18; */
 }
 .canvas_details .clearfix > span {
   margin-top: 10px;
@@ -250,6 +250,7 @@ body {
   padding: 20px 0;
 }
 .open .dropdown-menu {
+  display: block;
   background-clip: padding-box;
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -974,7 +975,7 @@ md-radio-group md-radio-button {
   padding: 20px 20px 0;
   text-align: right;
   cursor: pointer;
-  color: #26c4e2;
+  color: #2f379a;
 }
 .icon-vertical ul li ul.ulChildMenu li a {
   font-size: 12px;
@@ -997,7 +998,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  background: #26c4e2;
+  background: #2f379a;
   margin-top: -8px;
 }
 
@@ -1010,9 +1011,9 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 }
 /* All the same stuff for Firefox */
 input[type="range"]::-moz-range-thumb {
-  background: #26c4e2;
+  background: #2f379a;
   cursor: pointer;
-  border: 1px solid #26c4e2;
+  border: 1px solid #2f379a;
   border-radius: 50%;
   height: 18px;
   width: 18px;
@@ -1020,9 +1021,9 @@ input[type="range"]::-moz-range-thumb {
 
 /* All the same stuff for IE */
 input[type="range"]::-ms-thumb {
-  background: #26c4e2;
+  background: #2f379a;
   cursor: pointer;
-  border: 1px solid #26c4e2;
+  border: 1px solid #2f379a;
   border-radius: 50%;
   height: 18px;
   width: 18px;

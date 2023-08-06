@@ -275,7 +275,7 @@ angular
 
         self.setCanvasWidth = function (width) {
           self.canvasWidth = width;
-          canvas.setWidth(width);
+          canvas.setWidth(200);
           self.render();
         };
 
@@ -293,7 +293,7 @@ angular
           self.canvasWidth = width;
           self.canvasOriginalWidth = width;
           canvas.originalWidth = width;
-          canvas.setWidth(width);
+          canvas.setWidth(200);
 
           self.canvasHeight = height;
           self.canvasOriginalHeight = height;
@@ -1505,10 +1505,10 @@ angular
 
           // My SVG file as s string.
           var mySVG = canvas.toSVG();
-          var currentFontUrl = window.location.href.split("#")[0] + "/css/fonts.css";
+          var currentFontUrl = window.location.href.split("#")[0] + "assets/plugins/design-tailor/css/fonts.css";
           $(document).find(".svgElements").html(mySVG);
           var fonts =
-            '<defs><style type="text/css">@import url("http://fonts.googleapis.com/css?family=Lato:400,300|Lobster|Architects+Daughter|Roboto|Oswald|Montserrat|Lora|PT+Sans|Ubuntu|Roboto+Slab|Fjalla+One|Indie+Flower|Playfair+Display|Poiret+One|Dosis|Oxygen|Lobster|Play|Shadows+Into+Light|Pacifico|Dancing+Script|Kaushan+Script|Gloria+Hallelujah|Black+Ops+One|Lobster+Two|Satisfy|Pontano+Sans|Domine|Russo+One|Handlee|Courgette|Special+Elite|Amaranth|Vidaloka");@import url(' +
+            '<defs><style type="text/css">@import url("https://fonts.googleapis.com/css?family=Lato:400,300|Lobster|Architects+Daughter|Roboto|Oswald|Montserrat|Lora|PT+Sans|Ubuntu|Roboto+Slab|Fjalla+One|Indie+Flower|Playfair+Display|Poiret+One|Dosis|Oxygen|Lobster|Play|Shadows+Into+Light|Pacifico|Dancing+Script|Kaushan+Script|Gloria+Hallelujah|Black+Ops+One|Lobster+Two|Satisfy|Pontano+Sans|Domine|Russo+One|Handlee|Courgette|Special+Elite|Amaranth|Vidaloka");@import url(' +
             currentFontUrl +
             ");</style></defs>";
           $(fonts).insertAfter($(document).find(".svgElements > svg > desc"));
@@ -1527,10 +1527,10 @@ angular
 
           // My SVG file as s string.
           var mySVG = canvas.toSVG();
-          var currentFontUrl = window.location.href.split("#")[0] + "/css/fonts.css";
+          var currentFontUrl = window.location.href.split("#")[0] + "assets/plugins/design-tailor/css/fonts.css";
           $(document).find(".svgElements").html(mySVG);
           var fonts =
-            '<defs><style type="text/css">@import url("http://fonts.googleapis.com/css?family=Lato:400,300|Lobster|Architects+Daughter|Roboto|Oswald|Montserrat|Lora|PT+Sans|Ubuntu|Roboto+Slab|Fjalla+One|Indie+Flower|Playfair+Display|Poiret+One|Dosis|Oxygen|Lobster|Play|Shadows+Into+Light|Pacifico|Dancing+Script|Kaushan+Script|Gloria+Hallelujah|Black+Ops+One|Lobster+Two|Satisfy|Pontano+Sans|Domine|Russo+One|Handlee|Courgette|Special+Elite|Amaranth|Vidaloka");@import url(' +
+            '<defs><style type="text/css">@import url("https://fonts.googleapis.com/css?family=Lato:400,300|Lobster|Architects+Daughter|Roboto|Oswald|Montserrat|Lora|PT+Sans|Ubuntu|Roboto+Slab|Fjalla+One|Indie+Flower|Playfair+Display|Poiret+One|Dosis|Oxygen|Lobster|Play|Shadows+Into+Light|Pacifico|Dancing+Script|Kaushan+Script|Gloria+Hallelujah|Black+Ops+One|Lobster+Two|Satisfy|Pontano+Sans|Domine|Russo+One|Handlee|Courgette|Special+Elite|Amaranth|Vidaloka");@import url(' +
             currentFontUrl +
             ");</style></defs>";
           $(fonts).insertAfter($(document).find(".svgElements > svg > desc"));
@@ -1958,7 +1958,7 @@ angular
           self.setCanvasBackgroundColor(JSONObject.background);
 
           // Set the size of the canvas
-          JSONObject.width = JSONObject.width || canvasSize;
+          JSONObject.width = JSONObject.width || 400;
           self.canvasOriginalWidth = JSONObject.width;
 
           JSONObject.height = JSONObject.height || canvasSize;

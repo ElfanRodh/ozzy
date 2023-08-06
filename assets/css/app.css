@@ -5,6 +5,7 @@
   --background-primary: #fff;
   --brand-primary-base: #2f379a;
   --grey-100: #ededed;
+  --colors-black: #1e1e1e;
 }
 
 body {
@@ -128,6 +129,11 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--text-primary-dark);
 }
 
 .navbar-nav .nav-link.active,
@@ -375,6 +381,14 @@ p {
   background-color: #e9e7e8;
 }
 
+.product .nav-link {
+  color: var(--text-primary-base);
+}
+
+.product .nav-link.active {
+  font-weight: 700;
+}
+
 .product .product-title {
   color: var(--text-primary-base);
   text-align: center;
@@ -406,6 +420,18 @@ p {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  line-height: 28px;
+  min-height: 170px;
+  padding-bottom: 24px;
+}
+
+.product .product-description-custom {
+  align-self: stretch;
+  color: var(--text-primary-base);
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 28px;
   min-height: 170px;
   padding-bottom: 24px;
@@ -451,7 +477,7 @@ p {
 }
 
 .satu-atap .satu-brand {
-  color: var(--text-primary-base, #4f4f4f);
+  color: var(--text-primary-base);
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   font-style: normal;
@@ -460,7 +486,7 @@ p {
 }
 
 .satu-atap .satu-subbrand {
-  color: var(--text-primary-base, #4f4f4f);
+  color: var(--text-primary-base);
   text-align: right;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -471,22 +497,34 @@ p {
 
 /* Outlet */
 .outlet {
-  background-color: #232323;
+  background-color: var(--colors-black);
   color: white;
+}
+
+.outlet .outlet-heading {
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+
+.outlet .outlet-heading-content {
+  display: flex;
+  width: 488px;
 }
 
 .outlet .outlet-title {
   align-self: stretch;
-  color: var(--background-primary, #fff);
+  color: var(--background-primary);
   font-family: "Cardo", serif;
   font-size: 56px;
   font-style: normal;
   line-height: 88px;
+  font-weight: 700;
 }
 
 .outlet .outlet-subtitle {
   align-self: stretch;
-  color: var(--background-primary, #fff);
+  color: var(--background-primary);
   font-family: "Lato", sans-serif;
   font-size: 42px;
   font-style: normal;
@@ -504,17 +542,62 @@ p {
   width: 20%;
 }
 
+/* Portfolio */
+.portfolio {
+  background-color: white;
+}
+
+.portfolio .portfolio-title {
+  color: var(--text-primary-base);
+  font-family: "Cardo", serif;
+  font-size: 56px;
+  font-style: normal;
+  line-height: 88px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.portfolio .portfolio-description {
+  color: var(--text-primary-base);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.portfolio .portfolio-description-2 {
+  color: var(--text-primary-base);
+  max-width: 1120px;
+  margin: auto;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.portfolio #carousel-portfolio-2 .item img {
+  max-height: 244px;
+  object-fit: cover;
+}
+
 /* Media Partner */
 .media {
   background-color: white;
 }
 
 .media .media-title {
-  color: var(--text-primary-base, #4f4f4f);
+  color: var(--text-primary-base);
   font-family: "Cardo", serif;
   font-size: 56px;
   font-style: normal;
   line-height: 88px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -530,16 +613,17 @@ p {
 }
 
 .kata .kata-title {
-  color: var(--text-primary-base, #4f4f4f);
+  color: var(--text-primary-base);
   font-family: "Cardo", serif;
   font-size: 56px;
   font-style: normal;
   line-height: 88px;
+  font-weight: 700;
   text-align: center;
 }
 
 .kata .kata-subtitle {
-  color: var(--text-primary-base, #4f4f4f);
+  color: var(--text-primary-base);
   font-family: "Lato", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -559,9 +643,14 @@ p {
 }
 
 .owl-nav {
-  display: block !important;
+  display: block;
   text-align: center;
 }
+
+/* .owl-nav.disabled {
+  display: none;
+  text-align: center;
+} */
 
 .owl-prev,
 .owl-next {
@@ -799,6 +888,10 @@ p {
     min-height: 195px;
   }
 
+  .product .product-description-custom {
+    min-height: 10px;
+  }
+
   .owl-prev,
   .owl-next {
     position: absolute;
@@ -825,13 +918,18 @@ p {
   .owl-next {
     right: 0px;
   }
+
+  /* .owl-nav.disabled {
+    display: block;
+    text-align: center;
+  } */
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
   .container,
   .container-show-lg {
-    max-width: 1260px;
+    max-width: 1300px;
   }
 
   .nav-link {

@@ -1,1 +1,5 @@
-{ "status": true, "images": ["assets/plugins/design-tailor/dummy_data/products/hats/14.png", "assets/plugins/design-tailor/dummy_data/products/hats/14-1.png"], "message": "Images Loaded Successfully" }
+{
+  "status": true,
+  "images": ["assets/create-design/mockup/polos/Abu Misty Gelap/01.jpg", "assets/create-design/mockup/polos/Abu Misty Gelap/02.jpg", "assets/create-design/mockup/polos/Abu Misty Gelap/03.jpg", "assets/create-design/mockup/polos/Abu Misty Gelap/04.jpg"],
+  "message": "Images Loaded Successfully"
+}

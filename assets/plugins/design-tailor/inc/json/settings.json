@@ -22,7 +22,7 @@
       "defaultProductImage": "assets/plugins/design-tailor/dummy_data/products/t_shirts/20.png",
       "quantity": 1,
       "defaultPrice": 210,
-      "defaultCurrency": "USD",
+      "defaultCurrency": "Rp.",
       "defaultProductTitle": "Tees Nues",
       "qrCode": "qrcode",
       "enter_drawing_mode": "Enter Drawing Mode",
@@ -30,7 +30,7 @@
       "drawing_line_width": 30,
       "drawing_color": "#000000",
       "drawing_line_shadow": 0,
-      "primaryColor": "#26C4E2",
+      "primaryColor": "#2F379A",
       "secondaryColor": "#ffffff",
       "graphicsCategory": "Flat Icons",
       "graphicsCategories": {
@@ -44,9 +44,8 @@
       },
       "productCategories": {
         "All": "All",
-        "Clothes": "Clothes",
-        "Bottles": "Bottles",
-        "Others": "Others"
+        "Polos": "Polos",
+        "Kombinasi": "Kombinasi"
       },
       "productByName": "DESC",
       "productByNames": {

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fabric.js Upper-canvas Size Limit</title>
+    <style>
+      #main-canvas-container {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+      }
+      #upper-canvas {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.5.0/fabric.min.js"></script>
+  </head>
+  <body>
+    <div id="main-canvas-container">
+      <canvas id="upper-canvas"></canvas>
+    </div>
+
+    <script>
+      // Inisialisasi kanvas Fabric.js
+      var canvas = new fabric.Canvas("upper-canvas", {
+        selection: false, // Matikan seleksi objek saat drag
+      });
+
+      // Tambahkan objek-objek desain ke dalam kanvas utama
+      var rect = new fabric.Rect({
+        left: 50,
+        top: 50,
+        width: 50,
+        height: 50,
+        fill: "blue",
+      });
+      canvas.add(rect);
+
+      // Event saat mouse di klik pada objek
+      canvas.on("mouse:down", function (e) {
+        var obj = e.target;
+        // Jika objek adalah upper-canvas, batasi ukurannya
+        if (obj.canvas && obj.canvas.wrapperEl.id === "upper-canvas") {
+          // Batasi ukuran objek menjadi maksimal 100x100
+          if (obj.width > 100 || obj.height > 100) {
+            obj.set({
+              scaleX: 100 / obj.width,
+              scaleY: 100 / obj.height,
+            });
+          }
+          // Jaga agar objek tetap di dalam batas upper-canvas
+          var canvasWidth = canvas.getWidth();
+          var canvasHeight = canvas.getHeight();
+          if (obj.left < 0) {
+            obj.set("left", 0);
+          } else if (obj.left + obj.getScaledWidth() > canvasWidth) {
+            obj.set("left", canvasWidth - obj.getScaledWidth());
+          }
+          if (obj.top < 0) {
+            obj.set("top", 0);
+          } else if (obj.top + obj.getScaledHeight() > canvasHeight) {
+            obj.set("top", canvasHeight - obj.getScaledHeight());
+          }
+        }
+      });
+
+      // Event saat mouse dilepas setelah drag objek
+      canvas.on("mouse:up", function (e) {
+        var obj = e.target;
+        // Hapus border saat mouse dilepas setelah drag objek
+        obj.set("borderColor", "");
+        obj.set("borderWidth", 0);
+        canvas.renderAll(); // Perbarui tampilan kanvas
+      });
+    </script>
+  </body>
+</html>
+
