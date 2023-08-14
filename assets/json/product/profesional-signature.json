@@ -1,0 +1,77 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Polo Abu Misty Tua Kombinasi",
+      "price": 58000,
+      "category": "kombinasi",
+      "currency": "Rp. ",
+      "image": "assets/img/product/Mockup/KOMBINASI/Abu Misty Gelap/_01.-Abu-Misty-Gelap.jpg",
+      "description": "Lacost Pique Soft 20s"
+    },
+    {
+      "id": 2,
+      "name": "Polo Abu Misty Muda Polos",
+      "price": 58000,
+      "category": "polos",
+      "currency": "Rp. ",
+      "image": "assets/img/product/Mockup/POLOS/Abu Misty Muda/_01.-Abu-Misty-Muda.jpg",
+      "description": "Lacost Pique Soft 20s"
+    },
+    {
+      "id": 3,
+      "name": "Polo Biru Benhur Kombinasi",
+      "price": 58000,
+      "category": "kombinasi",
+      "currency": "Rp. ",
+      "image": "assets/img/product/Mockup/KOMBINASI/Biru Benhur/_01.-Biru-Benhur.jpg",
+      "description": "Lacost Pique Soft 20s"
+    },
+    {
+      "id": 4,
+      "name": "Polo Biru Muda Polos",
+      "price": 58000,
+      "category": "polos",
+      "currency": "Rp. ",
+      "image": "assets/img/product/Mockup/POLOS/Biru Muda/_01.-Biru-Muda.jpg",
+      "description": "Lacost Pique Soft 20s"
+    },
+    {
+      "id": 5,
+      "name": "Polo Biru Muda Kombinasi",
+      "price": 58000,
+      "category": "kombinasi",
+      "currency": "Rp. ",
+      "image": "assets/img/product/Mockup/KOMBINASI/Biru Muda/_01.-Biru-Muda.jpg",
+      "description": "Lacost Pique Soft 20s"
+    },
+    {
+      "id": 6,
+      "name": "Polo Biru Navy Polos",
+      "price": 58000,
+      "category": "polos",
+      "currency": "Rp. ",
+      "image": "assets/img/product/Mockup/POLOS/Biru Navy/_01.-Biru-Navy.jpg",
+      "description": "Lacost Pique Soft 20s"
+    },
+    {
+      "id": 7,
+      "name": "Polo Biru Turkis Kombinasi",
+      "price": 58000,
+      "category": "kombinasi",
+      "currency": "Rp. ",
+      "image": "assets/img/product/Mockup/KOMBINASI/Biru Turkis/_01.-Biru-Turkis.jpg",
+      "description": "Lacost Pique Soft 20s"
+    },
+    {
+      "id": 8,
+      "name": "Polo Cokelat Gelap Polos",
+      "price": 58000,
+      "category": "polos",
+      "currency": "Rp. ",
+      "image": "assets/img/product/Mockup/POLOS/Cokelat Gelap/_01.-Cokelat-Gelap.jpg",
+      "description": "Lacost Pique Soft 20s"
+    }
+  ]
+}
+
