@@ -51,6 +51,49 @@ p {
   font-weight: 900;
 }
 
+.form-label {
+  color: var(--text-primary-base, #4f4f4f);
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.form-select {
+  display: flex;
+  padding: 12px 24px;
+  gap: 40px;
+  border-radius: 8px;
+  color: var(--text-primary-base, #4f4f4f);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 34px;
+}
+
+.form-select:focus {
+  border-color: var(--text-primary-base);
+  outline: 0;
+  box-shadow: 0 0 0 0 var(--text-primary-dark);
+}
+
+.form-select option {
+  background-color: var(--background-primary);
+  color: var(--text-primary-base);
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.form-select option:checked,
+.form-select option:hover,
+.form-select option:focus {
+  background-color: var(--text-primary-base) !important;
+  color: var(--background-primary);
+}
+
 /* Component */
 .btn-login {
   display: flex;
@@ -704,49 +747,6 @@ p {
   background: var(--brand-accent-base, #eae8e9);
 }
 
-.onzy-signature .form-product .form-label {
-  color: var(--text-primary-base, #4f4f4f);
-  text-align: center;
-  font-family: Lato;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 34px;
-}
-
-.onzy-signature .form-product .form-select {
-  display: flex;
-  padding: 12px 24px;
-  gap: 40px;
-  border-radius: 8px;
-  color: var(--text-primary-base, #4f4f4f);
-  font-family: Lato;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 34px;
-}
-
-.onzy-signature .form-product .form-select:focus {
-  border-color: var(--text-primary-base);
-  outline: 0;
-  box-shadow: 0 0 0 0 var(--text-primary-dark);
-}
-
-.onzy-signature .form-product .form-select option {
-  background-color: var(--background-primary);
-  color: var(--text-primary-base);
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
-}
-
-.onzy-signature .form-product .form-select option:checked,
-.onzy-signature .form-product .form-select option:hover,
-.onzy-signature .form-product .form-select option:focus {
-  background-color: var(--text-primary-base) !important;
-  color: var(--background-primary);
-}
-
 .onzy-signature .product-card-title {
   align-self: stretch;
   color: var(--text-primary-base, #4f4f4f);
@@ -1203,6 +1203,162 @@ p {
   font-style: normal;
   font-weight: 700;
   line-height: 48px;
+}
+
+/* FAQ */
+.faq-hero {
+  background: var(--brand-accent-base, #eae8e9);
+}
+
+.faq {
+  background: var(--brand-accent-base, #eae8e9);
+}
+
+.faq .faq-title {
+  color: var(--text-primary-base, #4f4f4f);
+  text-align: center;
+  font-family: Cardo;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+}
+
+.faq .accordion-item {
+  margin-bottom: 24px;
+  border-radius: 12px !important;
+  border: 1px solid var(--background-highlight, #f0f0f0);
+}
+
+.faq .accordion-button {
+  border-radius: 12px !important;
+  box-shadow: 0 0 0 0;
+  color: var(--text-primary-base, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.faq .accordion-body {
+  color: var(--text-primary-base, #4f4f4f);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  border-radius: 12px;
+  background: var(--background-primary, #fff);
+}
+
+/* CONTACT */
+.contact {
+  background: var(--brand-accent-base, #eae8e9);
+}
+
+.contact .contact-heading {
+  display: flex;
+  width: 791px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .contact-title {
+  max-width: 735px;
+  color: var(--text-primary-base, #4f4f4f);
+  text-align: center;
+  font-family: "Cardo", serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px;
+  margin: 0 auto;
+}
+
+.contact .contact-description {
+  color: var(--text-primary-base, #4f4f4f);
+  text-align: center;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 38px;
+}
+
+.contact .table-responsive {
+  background: var(--brand-accent-base, #eae8e9);
+}
+
+.table-contact thead {
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+  border-radius: 50px;
+}
+
+.table-contact thead::before {
+  /* background: var(--grey-500, #a7a7a7);
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 90px; */
+}
+
+.table-contact th {
+  padding: 20px 20px;
+  align-self: stretch;
+  background: var(--grey-500, #a7a7a7);
+  color: var(--background-primary, #fff);
+  font-family: Montserrat;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.table-contact .img-table {
+  max-height: 250px;
+}
+
+.table-contact .table-title {
+  color: var(--text-primary-base, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.table-contact .table-subtitle {
+  color: var(--text-primary-base, #4f4f4f);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+}
+
+.table-contact .table-desc {
+  color: var(--text-primary-base, #4f4f4f);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 38px;
+}
+
+.table-contact .table-description {
+  color: var(--text-primary-base, #4f4f4f);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
 }
 
 /* BLOG */
