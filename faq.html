@@ -359,12 +359,12 @@
                     <h2 class="accordion-header" id="` +
             i +
             `">
-                      <button class="accordion-button ` +
-            (i == 0 ? `collapsed` : ``) +
+                      <button class="accordion-button position-relative ` +
+            (i === 0 ? `collapsed` : ``) +
             `" type="button" data-bs-toggle="collapse" data-bs-target="#panel-` +
             i +
             `" aria-expanded="` +
-            (i == 0 ? `true` : ``) +
+            (i === 0 ? `true` : ``) +
             `" aria-controls="panel-` +
             i +
             `">` +
@@ -374,8 +374,8 @@
                     <div id="panel-` +
             i +
             `" class="accordion-collapse collapse ` +
-            (i == 0 ? `show open` : ``) +
-            `" aria-labelledby="` +
+            (i === 0 ? `show open` : ``) +
+            `" aria-labelledby="panel-` +
             i +
             `">
                       <div class="accordion-body">` +

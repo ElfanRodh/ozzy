@@ -1239,6 +1239,15 @@ p {
   font-style: normal;
   font-weight: 700;
   line-height: 48px;
+  padding-left: 65px;
+}
+
+.faq .accordion-button::after {
+  position: absolute;
+  left: 24px;
+  width: 24px;
+  height: 25px;
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M12.0008 11.2326L8.10078 15.1326C7.91745 15.316 7.68411 15.4076 7.40078 15.4076C7.11745 15.4076 6.88411 15.316 6.70078 15.1326C6.51745 14.9493 6.42578 14.716 6.42578 14.4326C6.42578 14.1493 6.51745 13.916 6.70078 13.7326L11.3008 9.13264C11.5008 8.93264 11.7341 8.83264 12.0008 8.83264C12.2674 8.83264 12.5008 8.93264 12.7008 9.13264L17.3008 13.7326C17.4841 13.916 17.5758 14.1493 17.5758 14.4326C17.5758 14.716 17.4841 14.9493 17.3008 15.1326C17.1174 15.316 16.8841 15.4076 16.6008 15.4076C16.3174 15.4076 16.0841 15.316 15.9008 15.1326L12.0008 11.2326Z" fill="black"/></svg>');
 }
 
 .faq .accordion-body {
@@ -1248,6 +1257,9 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 34px;
+  padding-left: 65px;
+  padding-top: 0px;
+  padding-bottom: 24px;
 }
 
 .faq .accordion-button:not(.collapsed) {
@@ -1301,7 +1313,7 @@ p {
   border-radius: 50px;
 }
 
-.table-contact thead::before {
+.table-contact thead::after {
   /* background: var(--grey-500, #a7a7a7);
   position: absolute;
   content: "";
@@ -1359,6 +1371,67 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 34px;
+}
+
+/* ABOUT US */
+.about-hero {
+  background: var(--brand-accent-base, #eae8e9);
+}
+
+.about-us {
+  background: var(--brand-accent-base, #eae8e9);
+  min-height: 2000px;
+  /* min-height: 100vh; */
+}
+
+.about-text,
+.about-text-2 {
+  align-self: stretch;
+  color: var(--text-primary-base, #4f4f4f);
+  /* text-align: center; */
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 38px;
+}
+
+.about-us .about-img-overlay {
+  position: absolute;
+  bottom: -210px;
+}
+
+.about-us .about-text-overlay {
+  width: 18px;
+  align-self: stretch;
+  background: #353a96;
+  height: 100%;
+}
+
+.visi-misi {
+  background: var(--brand-accent-base, #eae8e9);
+}
+
+.visi-misi .visi-title {
+  align-self: stretch;
+  color: var(--text-primary-base, #4f4f4f);
+  text-align: center;
+  font-family: Cardo;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+}
+
+.visi-misi .visi-subtitle {
+  align-self: stretch;
+  color: var(--text-primary-base, #4f4f4f);
+  /* text-align: right; */
+  font-family: Montserrat;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
 }
 
 /* BLOG */
