@@ -226,7 +226,7 @@ p {
 
 .navbar-nav .dropdown-menu.show {
   display: inline-block;
-  width: 700px;
+  width: 100%;
   border: 0px !important;
   border-radius: 0px !important;
 }
@@ -1832,6 +1832,13 @@ p {
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
+  }
+
+  .navbar-nav .dropdown-menu.show {
+    display: inline-block;
+    width: 700px;
+    border: 0px !important;
+    border-radius: 0px !important;
   }
 
   .dropdown-menu li {
