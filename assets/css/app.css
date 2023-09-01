@@ -293,16 +293,16 @@ p {
 
 .hero .hero-heading {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  /* top: 0; */
+  /* bottom: 0; */
   left: 0;
   right: 0;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
 }
 
 .hero .hero-heading .btn-app {
-  min-width: 120px;
+  min-width: 100px;
   padding: 6px 28px;
   border-radius: 4px;
   background: var(--text-primary-dark);
@@ -325,7 +325,7 @@ p {
 
 .hero .hero-heading-content-1 {
   display: flex;
-  width: 50%;
+  width: 60%;
   flex-direction: column;
   align-items: flex-start;
   gap: 6px;
@@ -334,27 +334,27 @@ p {
 
 .hero .hero-heading-content-2 {
   display: flex;
-  width: 660px;
+  width: 60%;
   flex-direction: column;
   align-items: flex-start;
-  gap: 18px;
-  padding-top: 100px;
+  gap: 6px;
+  padding-top: 10px;
 }
 
 .hero .hero-heading-content-3 {
   display: flex;
-  width: 1300px;
-  align-items: flex-end;
-  gap: 18px;
-  padding-bottom: 30px;
+  width: 100%;
+  align-items: flex-start;
+  gap: 6px;
+  padding-top: 10px;
 }
 
 .hero .hero-heading-content-4 {
   display: flex;
-  width: 1300px;
+  width: 100%;
   align-items: flex-end;
-  gap: 18px;
-  padding-bottom: 30px;
+  gap: 6px;
+  padding-bottom: 10px;
 }
 
 .hero .hero-heading-content-3 .hero-head {
@@ -367,11 +367,11 @@ p {
 
 .hero .hero-heading-content-3 .hero-subhead {
   display: flex;
-  width: 442px;
+  width: 35%;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 18px;
+  gap: 8px;
   flex-shrink: 0;
 }
 
@@ -394,7 +394,7 @@ p {
   align-self: stretch;
   color: var(--text-primary-base);
   font-family: "Cardo", serif;
-  font-size: 60px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -404,7 +404,7 @@ p {
   align-self: stretch;
   color: var(--text-primary-base);
   font-family: "Cardo", serif;
-  font-size: 60px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -414,7 +414,7 @@ p {
   align-self: stretch;
   color: var(--text-primary-base);
   font-family: "Cardo", serif;
-  font-size: 48px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -424,17 +424,17 @@ p {
   align-self: stretch;
   color: var(--text-primary-base);
   font-family: "Montserrat", sans-serif;
-  font-size: 26px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 12px;
 }
 
 .hero-description {
   align-self: stretch;
   color: var(--text-primary-base);
   font-family: "Lato", sans-serif;
-  font-size: 5px;
+  font-size: 6px;
   font-style: normal;
   font-weight: 400;
   line-height: inherit;
