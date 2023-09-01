@@ -36,15 +36,19 @@
   <body>
     <nav class="navbar navbar-expand-lg flex justify-content-end menu">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarContent">
+        <a class="navbar-brand d-block d-md-none mx-0" href="#">
+          <img class="img img-fluid img-brand" src="assets/img/logo/logo-ozzy-R-HITAM.png" alt="" />
+        </a>
+        <div class="collapse navbar-collapse px-3" id="navbarContent">
           <ul class="navbar-nav me-auto mb-lg-0">
             <li class="nav-item pe-1 pe-xxl-4">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item pe-1 pe-xxl-4">
+              <!-- <a class="nav-link" href="assets/plugins/design-tailor/index.html">Start Design</a> -->
               <a class="nav-link" href="start-design.html">Start Design</a>
             </li>
             <li class="nav-item pe-1 pe-xxl-4 dropdown">
@@ -85,7 +89,7 @@
             </li>
           </ul>
           <a href="#" class="btn btn-login font-lato me-3">Login</a>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand d-none d-lg-block" href="#">
             <img class="img img-fluid img-brand" src="assets/img/logo/logo-ozzy-R-HITAM.png" alt="" />
           </a>
         </div>
@@ -190,7 +194,7 @@
     <section id="footer" class="footer">
       <footer class="container">
         <div class="row">
-          <div class="col-6 p-5">
+          <div class="col-12 col-md-6 p-3 p-md-5">
             <div class="row">
               <div class="col-12 py-2">
                 <img src="assets/img/logo/logo-ozzy-R-HITAM.png" class="img img-fluid img-brand-2" alt="" />
@@ -201,8 +205,8 @@
                   Kaos Polo kami bisa di bordir sesuai dengan kebutuhan Anda.
                 </p>
               </div>
-              <div class="col-12 py-2 w-50">
-                <div class="d-flex flex-row justify-content-between">
+              <div class="col-12 py-2">
+                <div class="d-flex flex-row justify-content-start gap-3">
                   <a class="img-sosmed" href="https://www.instagram.com/ozzy.clothing/" target="_blank">
                     <img src="assets/img/footer/instagram.png" class="img img-fluid" alt="" />
                   </a>
@@ -306,10 +310,10 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6 p-3 p-md-0">
             <div class="row">
-              <div class="col-6 py-5">
-                <div class="row py-5">
+              <div class="col-12 col-md-6 py-1 py-md-5">
+                <div class="row py-1 py-md-5">
                   <div class="col-12">
                     <h1 class="footer-text-2">Quick Links</h1>
                     <nav class="flex flex-column justify-content-start font-lato">
@@ -346,8 +350,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 py-5">
-                <div class="row py-5">
+              <div class="col-12 col-md-6 py-1 py-md-5">
+                <div class="row py-1 py-md-5">
                   <div class="col-12">
                     <h1 class="footer-text-2">Contacts</h1>
                   </div>
@@ -385,7 +389,10 @@
         </div>
         <div class="row py-5">
           <div class="col-12 text-center">
-            <p class="font-lato fw-black">Copyright © 2023 Ozzy Clothing - PT. Ozzy Clothing Indonesia. All Right Reserved.</p>
+            <p class="font-lato fw-black">
+              Copyright © 2023 <br class="d-block d-md-none" />
+              Ozzy Clothing - PT. Ozzy Clothing Indonesia. All Right Reserved.
+            </p>
           </div>
         </div>
       </footer>
