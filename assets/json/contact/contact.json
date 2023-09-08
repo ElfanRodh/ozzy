@@ -1,0 +1,42 @@
+[
+  {
+    "kota": "Yogyakarta",
+    "nama": "Ozzy Clothing Pusat",
+    "gambar": "assets/img/contact/Pusat.jpg",
+    "location": "https://goo.gl/maps/mp8StVZaH52m2g446",
+    "alamat": "Jl. Ki Penjawi No.3B, Pandeyan, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55161",
+    "opening_hours": {
+      "mon_sat": "09.00-21.00",
+      "sun": "Off"
+    },
+    "email": "halominzy@ozzyclothing.co.id",
+    "contact": "(+62) 87839404154"
+  },
+  {
+    "kota": "Yogyakarta",
+    "nama": "Ozzy Clothing Kabupaten",
+    "gambar": "assets/img/contact/Kabuaten.jpg",
+    "location": "https://goo.gl/maps/9avmix6G3evBKKSCA",
+    "alamat": "Jl. Kabupaten No.Km 1.5, Nusupan, Trihanggo, Kec. Gamping, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55291",
+    "opening_hours": {
+      "mon_sat": "09.00-21.00",
+      "sun": "Off"
+    },
+    "email": "halominzy@ozzyclothing.co.id",
+    "contact": "(+62) 87734077322"
+  },
+  {
+    "kota": "Yogyakarta",
+    "nama": "Ozzy Clothing Maguwo",
+    "gambar": "assets/img/contact/Maguwo.jpg",
+    "location": "https://goo.gl/maps/9avmix6G3evBKKSCA",
+    "alamat": "Jl. Kabupaten No.Km 1.5, Nusupan, Trihanggo, Kec. Gamping, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55291",
+    "opening_hours": {
+      "mon_sat": "09.00-21.00",
+      "sun": "Off"
+    },
+    "email": "halominzy@ozzyclothing.co.id",
+    "contact": "(+62) 87734077322"
+  }
+]
+

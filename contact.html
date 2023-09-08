@@ -128,22 +128,38 @@
     </section>
     <section id="contact-table" class="contact">
       <div class="">
-        <div class="row justify-content-center py-4 p-0 m-0">
-          <div class="col-12 p-0 m-0">
+        <div class="row justify-content-center pt-3 pt-md-5 pb-5 m-0">
+          <div class="col-12 px-3 px-md-0 m-0">
             <div class="table-responsive">
-              <table class="table-contact container" style="width: 100%">
-                <thead style="height: 90px">
-                  <tr>
-                    <th class="text-left">Kota</th>
-                    <th class="text-left">Alamat</th>
-                    <th class="text-left">Email</th>
-                    <th class="text-left">Contact</th>
+              <table class="table-contact with-header w-100 overflow-hidden">
+                <thead>
+                  <tr class="d-none d-md-flex container">
+                    <th class="text-left td-kota">Kota</th>
+                    <th class="text-left td-alamat">Alamat</th>
+                    <th class="text-left td-email">Email</th>
+                    <th class="text-left td-contact">Contact</th>
                   </tr>
                 </thead>
+              </table>
+              <table class="table-contact container w-100 overflow-hidden">
+                <!-- 
+                <thead>
+                  <tr class="d-none d-md-table-row">
+                    <th class="text-left td-kota">Kota</th>
+                    <th class="text-left td-alamat">Alamat</th>
+                    <th class="text-left td-email">Email</th>
+                    <th class="text-left td-contact">Contact</th>
+                  </tr>
+                </thead> 
+                -->
                 <tbody>
+                  <!-- 
                   <tr>
-                    <td class="pe-5 py-3" style="width: 30%">
-                      <div class="d-flex flex-column align-items-center gap-2">
+                    <td class="pe-0 pe-md-5 py-3 td-kota">
+                      <div class="row title-small">
+                        <div class="col-12">Kota</div>
+                      </div>
+                      <div class="d-flex flex-column align-items-center gap-1 gap-md-2">
                         <div class="col-12">
                           <h2 class="table-title">Yogyakarta</h2>
                         </div>
@@ -167,10 +183,13 @@
                         </div>
                       </div>
                     </td>
-                    <td class="pe-5" style="width: 25%">
-                      <div class="d-flex flex-column gap-4">
-                        <div class="row align-items-center">
-                          <div class="col-1">
+                    <td class="pe-0 pe-md-5 td-alamat">
+                      <div class="d-flex flex-column gap-1 gap-md-4">
+                        <div class="row title-small">
+                          <div class="col-12">Alamat</div>
+                        </div>
+                        <div class="row align-items-start">
+                          <div class="col-1 pt-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                               <path
                                 d="M12 19.85C14.0333 17.9833 15.5417 16.2873 16.525 14.762C17.5083 13.2367 18 11.8827 18 10.7C18 8.88333 17.4207 7.396 16.262 6.238C15.1033 5.08 13.6827 4.50067 12 4.5C10.3167 4.5 8.89567 5.07933 7.737 6.238C6.57833 7.39667 5.99933 8.884 6 10.7C6 11.8833 6.49167 13.2377 7.475 14.763C8.45833 16.2883 9.96667 17.984 12 19.85ZM12 21.825C11.7667 21.825 11.5333 21.7833 11.3 21.7C11.0667 21.6167 10.8583 21.4917 10.675 21.325C9.59167 20.325 8.63333 19.35 7.8 18.4C6.96667 17.45 6.271 16.5293 5.713 15.638C5.15433 14.746 4.72933 13.8877 4.438 13.063C4.14667 12.2383 4.00067 11.4507 4 10.7C4 8.2 4.80433 6.20833 6.413 4.725C8.02167 3.24167 9.884 2.5 12 2.5C14.1167 2.5 15.9793 3.24167 17.588 4.725C19.1967 6.20833 20.0007 8.2 20 10.7C20 11.45 19.854 12.2377 19.562 13.063C19.27 13.8883 18.845 14.7467 18.287 15.638C17.729 16.5293 17.0333 17.45 16.2 18.4C15.3667 19.35 14.4083 20.325 13.325 21.325C13.1417 21.4917 12.9333 21.6167 12.7 21.7C12.4667 21.7833 12.2333 21.825 12 21.825ZM12 12.5C12.55 12.5 13.021 12.3043 13.413 11.913C13.805 11.5217 14.0007 11.0507 14 10.5C14 9.95 13.804 9.479 13.412 9.087C13.02 8.695 12.5493 8.49933 12 8.5C11.45 8.5 10.979 8.696 10.587 9.088C10.195 9.48 9.99933 9.95067 10 10.5C10 11.05 10.196 11.521 10.588 11.913C10.98 12.305 11.4507 12.5007 12 12.5Z"
@@ -189,28 +208,41 @@
                           <div class="col-6 text-start">
                             <p class="table-description">Mon-Sat</p>
                           </div>
-                          <div class="col-6 text-end">09.00-21.00</div>
+                          <div class="col-6 text-end">
+                            <p class="table-description">09.00-21.00</p>
+                          </div>
                           <div class="col-6 text-start">
                             <p class="table-description">Sun</p>
                           </div>
-                          <div class="col-6 text-end">Off</div>
+                          <div class="col-6 text-end">
+                            <p class="table-description">Off</p>
+                          </div>
                         </div>
                       </div>
                     </td>
-                    <td class="pe-5" style="width: 25%">
-                      <div class="d-flex flex-column align-items-start gap-4">
+                    <td class="pe-0 pe-md-5">
+                      <div class="row title-small">
+                        <div class="col-12">Email</div>
+                      </div>
+                      <div class="d-flex flex-column align-items-start gap-1 gap-md-4">
                         <p class="table-description">halominzy@ozzyclothing.co.id</p>
                       </div>
                     </td>
-                    <td class="pe-5" style="width: 20%">
-                      <div class="d-flex flex-column align-items-start gap-4">
+                    <td class="pe-0 pe-md-5">
+                      <div class="row title-small">
+                        <div class="col-12">Contact</div>
+                      </div>
+                      <div class="d-flex flex-column align-items-start gap-1 gap-md-4">
                         <p class="table-description">(+62) 87839404154</p>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td class="pe-5 py-3" style="width: 30%">
-                      <div class="d-flex flex-column align-items-center gap-2">
+                    <td class="pe-0 pe-md-5 py-3 td-kota">
+                      <div class="row title-small">
+                        <div class="col-12">Kota</div>
+                      </div>
+                      <div class="d-flex flex-column align-items-center gap-1 gap-md-2">
                         <div class="col-12">
                           <h2 class="table-title">Yogyakarta</h2>
                         </div>
@@ -233,10 +265,13 @@
                         </div>
                       </div>
                     </td>
-                    <td class="pe-5" style="width: 25%">
-                      <div class="d-flex flex-column gap-4">
-                        <div class="row align-items-center">
-                          <div class="col-1">
+                    <td class="pe-0 pe-md-5 td-alamat">
+                      <div class="d-flex flex-column gap-1 gap-md-4">
+                        <div class="row title-small">
+                          <div class="col-12">Alamat</div>
+                        </div>
+                        <div class="row align-items-start">
+                          <div class="col-1 pt-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                               <path
                                 d="M12 19.85C14.0333 17.9833 15.5417 16.2873 16.525 14.762C17.5083 13.2367 18 11.8827 18 10.7C18 8.88333 17.4207 7.396 16.262 6.238C15.1033 5.08 13.6827 4.50067 12 4.5C10.3167 4.5 8.89567 5.07933 7.737 6.238C6.57833 7.39667 5.99933 8.884 6 10.7C6 11.8833 6.49167 13.2377 7.475 14.763C8.45833 16.2883 9.96667 17.984 12 19.85ZM12 21.825C11.7667 21.825 11.5333 21.7833 11.3 21.7C11.0667 21.6167 10.8583 21.4917 10.675 21.325C9.59167 20.325 8.63333 19.35 7.8 18.4C6.96667 17.45 6.271 16.5293 5.713 15.638C5.15433 14.746 4.72933 13.8877 4.438 13.063C4.14667 12.2383 4.00067 11.4507 4 10.7C4 8.2 4.80433 6.20833 6.413 4.725C8.02167 3.24167 9.884 2.5 12 2.5C14.1167 2.5 15.9793 3.24167 17.588 4.725C19.1967 6.20833 20.0007 8.2 20 10.7C20 11.45 19.854 12.2377 19.562 13.063C19.27 13.8883 18.845 14.7467 18.287 15.638C17.729 16.5293 17.0333 17.45 16.2 18.4C15.3667 19.35 14.4083 20.325 13.325 21.325C13.1417 21.4917 12.9333 21.6167 12.7 21.7C12.4667 21.7833 12.2333 21.825 12 21.825ZM12 12.5C12.55 12.5 13.021 12.3043 13.413 11.913C13.805 11.5217 14.0007 11.0507 14 10.5C14 9.95 13.804 9.479 13.412 9.087C13.02 8.695 12.5493 8.49933 12 8.5C11.45 8.5 10.979 8.696 10.587 9.088C10.195 9.48 9.99933 9.95067 10 10.5C10 11.05 10.196 11.521 10.588 11.913C10.98 12.305 11.4507 12.5007 12 12.5Z"
@@ -255,28 +290,41 @@
                           <div class="col-6 text-start">
                             <p class="table-description">Mon-Sat</p>
                           </div>
-                          <div class="col-6 text-end">09.00-21.00</div>
+                          <div class="col-6 text-end">
+                            <p class="table-description">09.00-21.00</p>
+                          </div>
                           <div class="col-6 text-start">
                             <p class="table-description">Sun</p>
                           </div>
-                          <div class="col-6 text-end">Off</div>
+                          <div class="col-6 text-end">
+                            <p class="table-description">Off</p>
+                          </div>
                         </div>
                       </div>
                     </td>
-                    <td class="pe-5" style="width: 25%">
-                      <div class="d-flex flex-column align-items-start gap-4">
+                    <td class="pe-0 pe-md-5">
+                      <div class="row title-small">
+                        <div class="col-12">Email</div>
+                      </div>
+                      <div class="d-flex flex-column align-items-start gap-1 gap-md-4">
                         <p class="table-description">halominzy@ozzyclothing.co.id</p>
                       </div>
                     </td>
-                    <td class="pe-5" style="width: 20%">
-                      <div class="d-flex flex-column align-items-start gap-4">
+                    <td class="pe-0 pe-md-5">
+                      <div class="row title-small">
+                        <div class="col-12">Contact</div>
+                      </div>
+                      <div class="d-flex flex-column align-items-start gap-1 gap-md-4">
                         <p class="table-description">(+62) 87734077322</p>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <td class="pe-5 py-3" style="width: 30%">
-                      <div class="d-flex flex-column align-items-center gap-2">
+                    <td class="pe-0 pe-md-5 py-3 td-kota">
+                      <div class="row title-small">
+                        <div class="col-12">Kota</div>
+                      </div>
+                      <div class="d-flex flex-column align-items-center gap-1 gap-md-2">
                         <div class="col-12">
                           <h2 class="table-title">Yogyakarta</h2>
                         </div>
@@ -299,10 +347,13 @@
                         </div>
                       </div>
                     </td>
-                    <td class="pe-5" style="width: 25%">
-                      <div class="d-flex flex-column gap-4">
-                        <div class="row align-items-center">
-                          <div class="col-1">
+                    <td class="pe-0 pe-md-5 td-alamat">
+                      <div class="d-flex flex-column gap-1 gap-md-4">
+                        <div class="row title-small">
+                          <div class="col-12">Alamat</div>
+                        </div>
+                        <div class="row align-items-start">
+                          <div class="col-1 pt-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                               <path
                                 d="M12 19.85C14.0333 17.9833 15.5417 16.2873 16.525 14.762C17.5083 13.2367 18 11.8827 18 10.7C18 8.88333 17.4207 7.396 16.262 6.238C15.1033 5.08 13.6827 4.50067 12 4.5C10.3167 4.5 8.89567 5.07933 7.737 6.238C6.57833 7.39667 5.99933 8.884 6 10.7C6 11.8833 6.49167 13.2377 7.475 14.763C8.45833 16.2883 9.96667 17.984 12 19.85ZM12 21.825C11.7667 21.825 11.5333 21.7833 11.3 21.7C11.0667 21.6167 10.8583 21.4917 10.675 21.325C9.59167 20.325 8.63333 19.35 7.8 18.4C6.96667 17.45 6.271 16.5293 5.713 15.638C5.15433 14.746 4.72933 13.8877 4.438 13.063C4.14667 12.2383 4.00067 11.4507 4 10.7C4 8.2 4.80433 6.20833 6.413 4.725C8.02167 3.24167 9.884 2.5 12 2.5C14.1167 2.5 15.9793 3.24167 17.588 4.725C19.1967 6.20833 20.0007 8.2 20 10.7C20 11.45 19.854 12.2377 19.562 13.063C19.27 13.8883 18.845 14.7467 18.287 15.638C17.729 16.5293 17.0333 17.45 16.2 18.4C15.3667 19.35 14.4083 20.325 13.325 21.325C13.1417 21.4917 12.9333 21.6167 12.7 21.7C12.4667 21.7833 12.2333 21.825 12 21.825ZM12 12.5C12.55 12.5 13.021 12.3043 13.413 11.913C13.805 11.5217 14.0007 11.0507 14 10.5C14 9.95 13.804 9.479 13.412 9.087C13.02 8.695 12.5493 8.49933 12 8.5C11.45 8.5 10.979 8.696 10.587 9.088C10.195 9.48 9.99933 9.95067 10 10.5C10 11.05 10.196 11.521 10.588 11.913C10.98 12.305 11.4507 12.5007 12 12.5Z"
@@ -321,25 +372,36 @@
                           <div class="col-6 text-start">
                             <p class="table-description">Mon-Sat</p>
                           </div>
-                          <div class="col-6 text-end">09.00-21.00</div>
+                          <div class="col-6 text-end">
+                            <p class="table-description">09.00-21.00</p>
+                          </div>
                           <div class="col-6 text-start">
                             <p class="table-description">Sun</p>
                           </div>
-                          <div class="col-6 text-end">Off</div>
+                          <div class="col-6 text-end">
+                            <p class="table-description">Off</p>
+                          </div>
                         </div>
                       </div>
                     </td>
-                    <td class="pe-5" style="width: 25%">
-                      <div class="d-flex flex-column align-items-start gap-4">
+                    <td class="pe-0 pe-md-5">
+                      <div class="row title-small">
+                        <div class="col-12">Email</div>
+                      </div>
+                      <div class="d-flex flex-column align-items-start gap-1 gap-md-4">
                         <p class="table-description">halominzy@ozzyclothing.co.id</p>
                       </div>
                     </td>
-                    <td class="pe-5" style="width: 20%">
-                      <div class="d-flex flex-column align-items-start gap-4">
+                    <td class="pe-0 pe-md-5">
+                      <div class="row title-small">
+                        <div class="col-12">Contact</div>
+                      </div>
+                      <div class="d-flex flex-column align-items-start gap-1 gap-md-4">
                         <p class="table-description">(+62) 87891979191</p>
                       </div>
                     </td>
                   </tr>
+                   -->
                 </tbody>
               </table>
             </div>
@@ -557,4 +619,127 @@
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function () {
+    getContact();
+  });
+
+  function getContact() {
+    $.ajax({
+      type: "GET",
+      url: "assets/json/contact/contact.json",
+      dataType: "json",
+      success: function (res) {
+        console.log(res);
+        var html = "";
+        $.each(res, function (i, val) {
+          html +=
+            `<tr>
+          <td class="pe-0 pe-md-5 py-3 td-kota">
+            <div class="row title-small">
+              <div class="col-12">Kota</div>
+            </div>
+            <div class="d-flex flex-column align-items-center gap-1 gap-md-2">
+              <div class="col-12">
+                <h2 class="table-title">` +
+            val.kota +
+            `</h2>
+              </div>
+              <div class="col-12">
+                <p class="table-subtitle">` +
+            val.nama +
+            `</p>
+              </div>
+
+              <div class="col-12">
+                <img src="` +
+            val.gambar +
+            `" class="img img-fluid img-table rounded-3" alt="" />
+              </div>
+              <div class="col-12 text-center mx-auto">
+                <a href="` +
+            val.location +
+            `" target="_blank" class="btn btn-app d-flex justify-content-center align-items-center mx-auto">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 19.35C14.0333 17.4833 15.5417 15.7873 16.525 14.262C17.5083 12.7367 18 11.3827 18 10.2C18 8.38333 17.4207 6.896 16.262 5.738C15.1033 4.58 13.6827 4.00067 12 4C10.3167 4 8.89567 4.57933 7.737 5.738C6.57833 6.89667 5.99933 8.384 6 10.2C6 11.3833 6.49167 12.7377 7.475 14.263C8.45833 15.7883 9.96667 17.484 12 19.35ZM12 21.325C11.7667 21.325 11.5333 21.2833 11.3 21.2C11.0667 21.1167 10.8583 20.9917 10.675 20.825C9.59167 19.825 8.63333 18.85 7.8 17.9C6.96667 16.95 6.271 16.0293 5.713 15.138C5.15433 14.246 4.72933 13.3877 4.438 12.563C4.14667 11.7383 4.00067 10.9507 4 10.2C4 7.7 4.80433 5.70833 6.413 4.225C8.02167 2.74167 9.884 2 12 2C14.1167 2 15.9793 2.74167 17.588 4.225C19.1967 5.70833 20.0007 7.7 20 10.2C20 10.95 19.854 11.7377 19.562 12.563C19.27 13.3883 18.845 14.2467 18.287 15.138C17.729 16.0293 17.0333 16.95 16.2 17.9C15.3667 18.85 14.4083 19.825 13.325 20.825C13.1417 20.9917 12.9333 21.1167 12.7 21.2C12.4667 21.2833 12.2333 21.325 12 21.325ZM12 12C12.55 12 13.021 11.8043 13.413 11.413C13.805 11.0217 14.0007 10.5507 14 10C14 9.45 13.804 8.979 13.412 8.587C13.02 8.195 12.5493 7.99933 12 8C11.45 8 10.979 8.196 10.587 8.588C10.195 8.98 9.99933 9.45067 10 10C10 10.55 10.196 11.021 10.588 11.413C10.98 11.805 11.4507 12.0007 12 12Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span class="ms-2">Location</span>
+                </a>
+              </div>
+            </div>
+          </td>
+          <td class="pe-0 pe-md-5 td-alamat">
+            <div class="d-flex flex-column gap-1 gap-md-4">
+              <div class="row title-small">
+                <div class="col-12">Alamat</div>
+              </div>
+              <div class="row align-items-start">
+                <div class="col-1 pt-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <path
+                      d="M12 19.85C14.0333 17.9833 15.5417 16.2873 16.525 14.762C17.5083 13.2367 18 11.8827 18 10.7C18 8.88333 17.4207 7.396 16.262 6.238C15.1033 5.08 13.6827 4.50067 12 4.5C10.3167 4.5 8.89567 5.07933 7.737 6.238C6.57833 7.39667 5.99933 8.884 6 10.7C6 11.8833 6.49167 13.2377 7.475 14.763C8.45833 16.2883 9.96667 17.984 12 19.85ZM12 21.825C11.7667 21.825 11.5333 21.7833 11.3 21.7C11.0667 21.6167 10.8583 21.4917 10.675 21.325C9.59167 20.325 8.63333 19.35 7.8 18.4C6.96667 17.45 6.271 16.5293 5.713 15.638C5.15433 14.746 4.72933 13.8877 4.438 13.063C4.14667 12.2383 4.00067 11.4507 4 10.7C4 8.2 4.80433 6.20833 6.413 4.725C8.02167 3.24167 9.884 2.5 12 2.5C14.1167 2.5 15.9793 3.24167 17.588 4.725C19.1967 6.20833 20.0007 8.2 20 10.7C20 11.45 19.854 12.2377 19.562 13.063C19.27 13.8883 18.845 14.7467 18.287 15.638C17.729 16.5293 17.0333 17.45 16.2 18.4C15.3667 19.35 14.4083 20.325 13.325 21.325C13.1417 21.4917 12.9333 21.6167 12.7 21.7C12.4667 21.7833 12.2333 21.825 12 21.825ZM12 12.5C12.55 12.5 13.021 12.3043 13.413 11.913C13.805 11.5217 14.0007 11.0507 14 10.5C14 9.95 13.804 9.479 13.412 9.087C13.02 8.695 12.5493 8.49933 12 8.5C11.45 8.5 10.979 8.696 10.587 9.088C10.195 9.48 9.99933 9.95067 10 10.5C10 11.05 10.196 11.521 10.588 11.913C10.98 12.305 11.4507 12.5007 12 12.5Z"
+                      fill="#4F4F4F"
+                    />
+                  </svg>
+                </div>
+                <div class="col-11 ps-4">
+                  <p class="table-description">` +
+            val.alamat +
+            `</p>
+                </div>
+              </div>
+              <div class="row justify-content-start">
+                <div class="col-12">
+                  <p class="table-desc">Opening Hours</p>
+                </div>
+                <div class="col-6 text-start">
+                  <p class="table-description">Mon-Sat</p>
+                </div>
+                <div class="col-6 text-end">
+                  <p class="table-description">` +
+            val.opening_hours.mon_sat +
+            `</p>
+                </div>
+                <div class="col-6 text-start">
+                  <p class="table-description">Sun</p>
+                </div>
+                <div class="col-6 text-end">
+                  <p class="table-description">` +
+            val.opening_hours.sun +
+            `</p>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="pe-0 pe-md-5 td-email">
+            <div class="row title-small">
+              <div class="col-12">Email</div>
+            </div>
+            <div class="d-flex flex-column align-items-start gap-1 gap-md-4">
+              <p class="table-description">` +
+            val.email +
+            `</p>
+            </div>
+          </td>
+          <td class="pe-0 pe-md-5 td-contact">
+            <div class="row title-small">
+              <div class="col-12">Contact</div>
+            </div>
+            <div class="d-flex flex-column align-items-start gap-1 gap-md-4">
+              <p class="table-description">` +
+            val.contact +
+            `</p>
+            </div>
+          </td>
+        </tr>`;
+        });
+
+        $(".table-contact tbody").html(html);
+      },
+    });
+  }
+</script>
 

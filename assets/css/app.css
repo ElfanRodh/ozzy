@@ -1416,6 +1416,11 @@ p {
   line-height: 38px;
 }
 
+.contact .btn-app {
+  width: 100%;
+  padding: 10px 70px;
+}
+
 .contact .table-responsive {
   background: var(--brand-accent-base, #eae8e9);
 }
@@ -1426,14 +1431,7 @@ p {
   gap: 32px;
   position: relative;
   border-radius: 50px;
-}
-
-.table-contact thead::after {
-  /* background: var(--grey-500, #a7a7a7);
-  position: absolute;
-  content: "";
-  width: 100vw;
-  height: 90px; */
+  height: 0px;
 }
 
 .table-contact th {
@@ -1448,26 +1446,49 @@ p {
   line-height: 48px;
 }
 
+.table-contact tbody > tr {
+  display: block;
+  border-radius: 0.8rem;
+  outline: 0;
+  margin-top: 0.5rem;
+}
+
+.table-contact tbody > tr > td {
+  width: 100%;
+  display: block;
+}
+
+.table-contact tbody > tr > td .title-small {
+  display: block;
+  color: var(--text-primary-light, #a7a7a7);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 34px;
+  margin-top: 1em;
+}
+
 .table-contact .img-table {
   max-height: 250px;
 }
 
 .table-contact .table-title {
   color: var(--text-primary-base, #4f4f4f);
-  font-family: Montserrat;
-  font-size: 26px;
+  font-family: Lato;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
+  font-weight: 900;
+  line-height: 28px;
 }
 
 .table-contact .table-subtitle {
   color: var(--text-primary-base, #4f4f4f);
-  font-family: Montserrat;
-  font-size: 18px;
+  font-family: Lato;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 38px;
+  font-weight: 900;
+  line-height: 28px;
 }
 
 .table-contact .table-desc {
@@ -1482,10 +1503,10 @@ p {
 .table-contact .table-description {
   color: var(--text-primary-base, #4f4f4f);
   font-family: Lato;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 34px;
+  font-weight: 900;
+  line-height: 28px;
 }
 
 /* ABOUT US */
@@ -3002,6 +3023,147 @@ p {
   .blog .card-blog-small .img-thumb {
     height: 20px;
     width: auto;
+  }
+
+  /* CONTACT */
+  .contact {
+    background: var(--brand-accent-base, #eae8e9);
+  }
+
+  .contact .contact-heading {
+    display: flex;
+    width: 791px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact .contact-title {
+    max-width: 735px;
+    color: var(--text-primary-base, #4f4f4f);
+    text-align: center;
+    font-family: "Cardo", serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px;
+    margin: 0 auto;
+  }
+
+  .contact .contact-description {
+    color: var(--text-primary-base, #4f4f4f);
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 38px;
+  }
+
+  .contact .btn-app {
+    width: 30%;
+    padding: 10px 70px;
+  }
+
+  .contact .table-responsive {
+    background: var(--brand-accent-base, #eae8e9);
+  }
+
+  .table-contact.with-header {
+    background: var(--grey-500, #a7a7a7);
+    color: var(--background-primary, #fff);
+  }
+
+  .table-contact thead {
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+    border-radius: 50px;
+    height: 90px;
+  }
+
+  .table-contact th {
+    padding: 20px 20px;
+    align-self: stretch;
+    background: var(--grey-500, #a7a7a7);
+    color: var(--background-primary, #fff);
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .table-contact tbody {
+    padding-top: 100px;
+  }
+
+  .table-contact tbody > tr {
+    display: table-row;
+  }
+
+  .table-contact tbody > tr > td {
+    display: table-cell;
+  }
+
+  .table-contact tbody > tr > td .title-small {
+    display: none;
+  }
+
+  .table-contact .td-kota {
+    width: 30%;
+  }
+
+  .table-contact .td-alamat {
+    width: 25%;
+  }
+
+  .table-contact .td-email {
+    width: 25%;
+  }
+
+  .table-contact .td-contact {
+    width: 20%;
+  }
+
+  .table-contact .img-table {
+    max-height: 250px;
+  }
+
+  .table-contact .table-title {
+    color: var(--text-primary-base, #4f4f4f);
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .table-contact .table-subtitle {
+    color: var(--text-primary-base, #4f4f4f);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+  }
+
+  .table-contact .table-desc {
+    color: var(--text-primary-base, #4f4f4f);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 38px;
+  }
+
+  .table-contact .table-description {
+    color: var(--text-primary-base, #4f4f4f);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
   }
 }
 
