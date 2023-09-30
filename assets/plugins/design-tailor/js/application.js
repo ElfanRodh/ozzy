@@ -930,6 +930,8 @@ angular.module("productApp", ["common.fabric", "common.fabric.utilities", "commo
         $scope.defaultCurrency = currency;
         $scope.defaultProductTitle = title;
         _this.initProductSubImages(id);
+
+        // console.log($scope.defaultCurrency, $scope.defaultPrice);
       }
       $scope.isloaded = true;
       $scope.$broadcast("rebuild:me");

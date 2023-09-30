@@ -132,6 +132,57 @@ angular
         var h = [];
         var copiedObject;
         var copiedObjects = new Array();
+        var boundingBox = [
+          new fabric.Rect({
+            width: 200,
+            height: 240,
+            hasBorders: false,
+            hasControls: false,
+            lockMovementX: true,
+            lockMovementY: true,
+            evented: false,
+            stroke: "red",
+            strokeDashArray: [5, 5],
+            fill: "transparent",
+            top: 160,
+            left: 145,
+            selectable: false,
+            opacity: 0,
+          }),
+          new fabric.Rect({
+            width: 80,
+            height: 40,
+            hasBorders: false,
+            hasControls: false,
+            lockMovementX: true,
+            lockMovementY: true,
+            evented: false,
+            stroke: "black",
+            strokeDashArray: [5, 5],
+            fill: "transparent",
+            top: 100,
+            left: 145,
+            selectable: false,
+            opacity: 0,
+          }),
+          new fabric.Rect({
+            width: 80,
+            height: 40,
+            hasBorders: false,
+            hasControls: false,
+            lockMovementX: true,
+            lockMovementY: true,
+            evented: false,
+            stroke: "green",
+            strokeDashArray: [5, 5],
+            fill: "transparent",
+            top: 100,
+            selectable: false,
+            left: 265,
+            opacity: 0,
+          }),
+        ];
+
         self.designedObjects = {};
         self.designedSVGObjects = {};
         self.designedPNGObjects = {};
@@ -248,6 +299,10 @@ angular
           for (var i in objects) {
             objects[i].setCoords();
           }
+
+          canvas.add(boundingBox[0]);
+          canvas.add(boundingBox[1]);
+          canvas.add(boundingBox[2]);
 
           canvas.calcOffset();
           canvas.renderAll();
@@ -591,6 +646,114 @@ angular
           object.id = self.createId();
 
           self.addObjectToCanvas(object);
+        };
+
+        // Limit Drag
+        self.limitDrag = function (e, box) {
+          var obj = e.target;
+          var canvas = obj.canvas;
+          var zoom = canvas.getZoom();
+          var pan_x = canvas.viewportTransform[4];
+          var pan_y = canvas.viewportTransform[5];
+
+          var left = obj.left;
+          var top = obj.top;
+          var width = obj.width * obj.scaleX;
+          var height = obj.height * obj.scaleY;
+
+          var c_width = canvas.width / zoom;
+          var c_height = canvas.height / zoom;
+
+          var left_adjust, right_adjust;
+          if (obj.originX == "center") {
+            left_adjust = right_adjust = width / 2;
+          } else {
+            left_adjust = 0;
+            right_adjust = width;
+          }
+          var top_adjust, bottom_adjust;
+          if (obj.originY == "center") {
+            top_adjust = bottom_adjust = height / 2;
+          } else {
+            top_adjust = 0;
+            bottom_adjust = height;
+          }
+
+          if (obj.angle) {
+            var angle = obj.angle;
+            if (angle > 270) {
+              angle -= 270;
+            } else if (angle > 180) {
+              angle -= 180;
+            } else if (angle > 90) {
+              angle -= 90;
+            }
+            const radians = angle * (Math.PI / 180);
+            const w_opposite = width * Math.sin(radians);
+            const w_adjacent = width * Math.cos(radians);
+            const h_opposite = height * Math.sin(radians);
+            const h_adjacent = height * Math.cos(radians);
+
+            if (obj.originX != "center" && obj.originY != "center") {
+              if (obj.angle <= 90) {
+                left_adjust = h_opposite;
+                top_adjust = 0;
+                right_adjust = w_adjacent;
+                bottom_adjust = h_adjacent + w_opposite;
+              } else if (obj.angle > 90 && obj.angle <= 180) {
+                left_adjust = h_adjacent + w_opposite;
+                top_adjust = h_opposite;
+                right_adjust = 0;
+                bottom_adjust = w_adjacent;
+              } else if (obj.angle > 180 && obj.angle <= 270) {
+                left_adjust = w_adjacent;
+                top_adjust = w_opposite + h_adjacent;
+                right_adjust = h_opposite;
+                bottom_adjust = 0;
+              } else {
+                left_adjust = 0;
+                top_adjust = w_adjacent;
+                right_adjust = w_opposite + h_adjacent;
+                bottom_adjust = h_opposite;
+              }
+            }
+
+            if (obj.originX == "center" && obj.originY == "center") {
+              if (obj.angle <= 90 || (obj.angle > 180 && obj.angle <= 270)) {
+                left_adjust = (w_adjacent + h_opposite) / 2;
+                right_adjust = (w_adjacent + h_opposite) / 2;
+                top_adjust = (h_adjacent + w_opposite) / 2;
+                bottom_adjust = (h_adjacent + w_opposite) / 2;
+              } else {
+                left_adjust = (h_adjacent + w_opposite) / 2;
+                right_adjust = (h_adjacent + w_opposite) / 2;
+                top_adjust = (w_adjacent + h_opposite) / 2;
+                bottom_adjust = (w_adjacent + h_opposite) / 2;
+              }
+            }
+          }
+
+          var top_margin = box.top;
+          var bottom_margin = canvas.height - (box.top + box.height);
+          var left_margin = box.left;
+          var right_margin = canvas.width - (box.left + box.width);
+
+          var top_bound = top_margin + top_adjust - pan_y;
+          var bottom_bound = c_height - bottom_adjust - bottom_margin - pan_y;
+          var left_bound = left_margin + left_adjust - pan_x;
+          var right_bound = c_width - right_adjust - right_margin - pan_x;
+
+          if (width > c_width) {
+            obj.set("left", left_bound);
+          } else {
+            obj.set("left", Math.min(Math.max(left, left_bound), right_bound));
+          }
+
+          if (height > c_height) {
+            obj.set("top", top_bound);
+          } else {
+            obj.set("top", Math.min(Math.max(top, top_bound), bottom_bound));
+          }
         };
 
         //
@@ -1505,7 +1668,8 @@ angular
 
           // My SVG file as s string.
           var mySVG = canvas.toSVG();
-          var currentFontUrl = window.location.href.split("#")[0] + "assets/plugins/design-tailor/css/fonts.css";
+          // var currentFontUrl = window.location.href.split("#")[0] + "assets/plugins/design-tailor/css/fonts.css";
+          var currentFontUrl = window.location.origin + "assets/plugins/design-tailor/css/fonts.css";
           $(document).find(".svgElements").html(mySVG);
           var fonts =
             '<defs><style type="text/css">@import url("https://fonts.googleapis.com/css?family=Lato:400,300|Lobster|Architects+Daughter|Roboto|Oswald|Montserrat|Lora|PT+Sans|Ubuntu|Roboto+Slab|Fjalla+One|Indie+Flower|Playfair+Display|Poiret+One|Dosis|Oxygen|Lobster|Play|Shadows+Into+Light|Pacifico|Dancing+Script|Kaushan+Script|Gloria+Hallelujah|Black+Ops+One|Lobster+Two|Satisfy|Pontano+Sans|Domine|Russo+One|Handlee|Courgette|Special+Elite|Amaranth|Vidaloka");@import url(' +
@@ -1527,7 +1691,8 @@ angular
 
           // My SVG file as s string.
           var mySVG = canvas.toSVG();
-          var currentFontUrl = window.location.href.split("#")[0] + "assets/plugins/design-tailor/css/fonts.css";
+          // var currentFontUrl = window.location.href.split("#")[0] + "assets/plugins/design-tailor/css/fonts.css";
+          var currentFontUrl = window.location.origin + "assets/plugins/design-tailor/css/fonts.css";
           $(document).find(".svgElements").html(mySVG);
           var fonts =
             '<defs><style type="text/css">@import url("https://fonts.googleapis.com/css?family=Lato:400,300|Lobster|Architects+Daughter|Roboto|Oswald|Montserrat|Lora|PT+Sans|Ubuntu|Roboto+Slab|Fjalla+One|Indie+Flower|Playfair+Display|Poiret+One|Dosis|Oxygen|Lobster|Play|Shadows+Into+Light|Pacifico|Dancing+Script|Kaushan+Script|Gloria+Hallelujah|Black+Ops+One|Lobster+Two|Satisfy|Pontano+Sans|Domine|Russo+One|Handlee|Courgette|Special+Elite|Amaranth|Vidaloka");@import url(' +
@@ -1965,6 +2130,24 @@ angular
           self.canvasOriginalHeight = JSONObject.height;
 
           self.setCanvasSize(self.canvasOriginalWidth, self.canvasOriginalHeight);
+
+          // Trigger
+          canvas.on("object:moving", function (e) {
+            let object = e.target;
+            boundingBox[0].set("opacity", 1);
+            if (object.isMoving) {
+              self.limitDrag(e, boundingBox[0]);
+              console.log(boundingBox[0].opacity);
+            }
+          });
+
+          canvas.on("mouse:up", function (e) {
+            let object = e.target;
+            if (object.isMoving == false) {
+              boundingBox[0].set("opacity", 0);
+              console.log(boundingBox[0].opacity);
+            }
+          });
 
           self.render();
           self.setDirty(false);

@@ -4,22 +4,22 @@
     {
       "id": 1,
       "name": "Abu Misty Gelap",
-      "price": 144,
+      "price": 58000,
       "category": "polos",
       "currency": "Rp.",
       "image": "assets/img/create-design/mockup/polos/Abu Misty Gelap/01.jpg",
       "sub_images": ["assets/img/create-design/mockup/polos/Abu Misty Gelap/01.jpg", "assets/img/create-design/mockup/polos/Abu Misty Gelap/02.jpg", "assets/img/create-design/mockup/polos/Abu Misty Gelap/03.jpg", "assets/img/create-design/mockup/polos/Abu Misty Gelap/04.jpg"],
-      "description": "Lorium ipsum dolor sit amet"
+      "description": "Lacost Pique Soft 20s"
     },
     {
       "id": 2,
       "name": "Biru Benhur",
-      "price": 144,
+      "price": 58000,
       "category": "kombinasi",
       "currency": "Rp.",
       "image": "assets/img/create-design/mockup/kombinasi/Biru Benhur/01.jpg",
       "sub_images": ["assets/img/create-design/mockup/kombinasi/Biru Benhur/01.jpg", "assets/img/create-design/mockup/kombinasi/Biru Benhur/02.jpg", "assets/img/create-design/mockup/kombinasi/Biru Benhur/03.jpg", "assets/img/create-design/mockup/kombinasi/Biru Benhur/04.jpg"],
-      "description": "Lorium ipsum dolor sit amet"
+      "description": "Lacost Pique Soft 20s"
     }
   ],
   "message": "Products Loaded Successfully"

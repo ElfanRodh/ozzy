@@ -31,6 +31,12 @@ p {
   margin: 0;
 }
 
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
 .font-cardo {
   font-family: "Cardo", serif;
 }
@@ -185,7 +191,7 @@ p {
 
 /* Menu */
 .navbar {
-  padding: 24px auto;
+  padding: 24px 0px;
 }
 
 .navbar-toggler {
@@ -1808,10 +1814,22 @@ p {
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (min-width: 768px) {
+  .navbar-nav .dropdown-menu.show {
+    display: inline-block;
+    width: 700px;
+    border: 0px !important;
+    border-radius: 0px !important;
+  }
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (min-width: 992px) {
+  .navbar-nav .dropdown-menu.show {
+    display: inline-block;
+    width: 700px;
+    border: 0px !important;
+    border-radius: 0px !important;
+  }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */

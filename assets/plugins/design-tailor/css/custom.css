@@ -1,4 +1,10 @@
-.icon-vertical ul li a,
+.icon-vertical ul li a {
+  padding: 10px;
+  color: #3e4954;
+  text-align: center;
+  display: block;
+}
+
 .icon-vertical ul li > span {
   padding: 10px;
   color: #3e4954;
