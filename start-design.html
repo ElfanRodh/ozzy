@@ -57,17 +57,20 @@
   <body>
     <nav class="navbar navbar-expand-lg flex justify-content-end menu">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarContent">
+        <a class="navbar-brand d-block d-md-none mx-0" href="#">
+          <img class="img img-fluid img-brand" src="assets/img/logo/logo-ozzy-R-HITAM.png" alt="" />
+        </a>
+        <div class="collapse navbar-collapse px-3" id="navbarContent">
           <ul class="navbar-nav me-auto mb-lg-0">
             <li class="nav-item pe-1 pe-xxl-4">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item pe-1 pe-xxl-4">
               <!-- <a class="nav-link" href="assets/plugins/design-tailor/index.html">Start Design</a> -->
-              <a class="nav-link active" aria-current="page" href="start-design.html">Start Design</a>
+              <a class="nav-link active" href="start-design.html">Start Design</a>
             </li>
             <li class="nav-item pe-1 pe-xxl-4 dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Product </a>
@@ -107,7 +110,7 @@
             </li>
           </ul>
           <a href="https://ozzyclothing.co.id/members-login" class="btn btn-login font-lato me-3">Login</a>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand d-none d-lg-block" href="#">
             <img class="img img-fluid img-brand" src="assets/img/logo/logo-ozzy-R-HITAM.png" alt="" />
           </a>
         </div>
@@ -865,7 +868,7 @@
     <section id="footer" class="footer">
       <footer class="container">
         <div class="row">
-          <div class="col-6 p-5">
+          <div class="col-12 col-md-6 p-3 p-md-5">
             <div class="row">
               <div class="col-12 py-2">
                 <img src="assets/img/logo/logo-ozzy-R-HITAM.png" class="img img-fluid img-brand-2" alt="" />
@@ -876,8 +879,8 @@
                   Kaos Polo kami bisa di bordir sesuai dengan kebutuhan Anda.
                 </p>
               </div>
-              <div class="col-12 py-2 w-50">
-                <div class="d-flex flex-row justify-content-between">
+              <div class="col-12 py-2">
+                <div class="d-flex flex-row justify-content-start gap-3">
                   <a class="img-sosmed" href="https://www.instagram.com/ozzy.clothing/" target="_blank">
                     <img src="assets/img/footer/instagram.png" class="img img-fluid" alt="" />
                   </a>
@@ -895,7 +898,7 @@
               <div class="col-12 py-2">
                 <h1 class="footer-text py-2">Our Mobile App</h1>
                 <a class="w-100" href="https://play.google.com/store/apps/details?id=com.layana.ozzy" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="149" height="45" viewBox="0 0 149 45" fill="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="149" height="45" viewBox="0 0 149 45" fill="none">
                     <g clip-path="url(#clip0_2907_12991)">
                       <path d="M142.999 0.879883H5.49997C2.46242 0.879883 0 3.3423 0 6.37986V39.3797C0 42.4172 2.46242 44.8797 5.49997 44.8797H142.999C146.037 44.8797 148.499 42.4172 148.499 39.3797V6.37986C148.499 3.3423 146.037 0.879883 142.999 0.879883Z" fill="black" />
                       <path
@@ -981,13 +984,13 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6 p-3 p-md-0">
             <div class="row">
-              <div class="col-6 py-5">
-                <div class="row py-5">
+              <div class="col-12 col-md-6 py-1 py-md-5">
+                <div class="row py-1 py-md-5">
                   <div class="col-12">
                     <h1 class="footer-text-2">Quick Links</h1>
-                    <nav class="flex flex-column justify-content-start font-lato">
+                    <nav class="d-flex flex-column justify-content-start font-lato">
                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item pe-1 pe-xxl-4">
                           <a class="nav-link" href="index.html">Home</a>
@@ -1021,8 +1024,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6 py-5">
-                <div class="row py-5">
+              <div class="col-12 col-md-6 py-1 py-md-5">
+                <div class="row py-1 py-md-5">
                   <div class="col-12">
                     <h1 class="footer-text-2">Contacts</h1>
                   </div>
@@ -1060,7 +1063,10 @@
         </div>
         <div class="row py-5">
           <div class="col-12 text-center">
-            <p class="font-lato fw-black">Copyright © 2023 Ozzy Clothing - PT. Ozzy Clothing Indonesia. All Right Reserved.</p>
+            <p class="font-lato fw-black">
+              Copyright © 2023 <br class="d-block d-md-none" />
+              Ozzy Clothing - PT. Ozzy Clothing Indonesia. All Right Reserved.
+            </p>
           </div>
         </div>
       </footer>
