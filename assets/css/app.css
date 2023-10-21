@@ -282,6 +282,90 @@ a:hover {
   background-color: var(--background-primary);
 }
 
+/* LOGIN */
+.onzy-login .card-login {
+  background-color: #2f379a;
+  border-radius: 0px;
+}
+
+.onzy-login .card-login .card-img-top {
+  border-radius: 0px;
+}
+
+.onzy-login .card-login .card-logo {
+  border-radius: 0px;
+  height: 54px;
+  width: fit-content;
+  margin: 24px 0px;
+}
+
+.onzy-login .card-login .card-title {
+  color: white;
+  font-size: 42px;
+  font-family: Cardo;
+  font-weight: 700;
+  line-height: 68px;
+  word-wrap: break-word;
+}
+
+.onzy-login .card-login .card-text {
+  color: white;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 38px;
+  word-wrap: break-word;
+}
+
+.onzy-login .heading-title {
+  color: #4f4f4f;
+  font-size: 26px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 48px;
+  word-wrap: break-word;
+}
+
+.onzy-login .heading-text {
+  color: #a7a7a7;
+  font-size: 16px;
+  font-family: Lato;
+  font-weight: 400;
+  line-height: 34px;
+  word-wrap: break-word;
+}
+
+.onzy-login .form-login .form-control {
+  border-radius: var(--bs-border-radius) !important;
+  color: #4f4f4f;
+  font-size: 14px;
+  font-family: Lato;
+  font-weight: 400;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+
+.onzy-login .form-login .form-control:focus {
+  border: #1e2235 2px solid;
+  background-color: unset !important;
+  box-shadow: unset;
+}
+
+.onzy-login .toggle-password {
+  position: absolute;
+  right: 1em;
+  top: 0;
+  bottom: 0;
+}
+
+.onzy-login .toggle-password:hover {
+  cursor: pointer;
+}
+
+.onzy-login .btn {
+  font-family: Lato;
+}
+
 /* HOME */
 /* Hero */
 .hero {
